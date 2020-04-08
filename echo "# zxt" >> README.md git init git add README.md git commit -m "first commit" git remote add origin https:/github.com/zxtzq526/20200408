@@ -1,0 +1,9 @@
+install.packages("devtools")
+library(devtools)
+install_github('yikeshu0611/nsfc')
+library(nsfc)
+df = search(search = c("m6A",'小脑'),
+            yearStart = 2014,
+            yearEnd = 2014)
+            View(df)
+            
